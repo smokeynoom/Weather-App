@@ -1,0 +1,149 @@
+body {
+      width: auto;
+      margin: 0 auto;
+      font-family: "Open Sans", sans-serif;
+}
+
+/* This will format the whole fieldset content*/
+
+.container {
+      width: 80%;
+      margin: 0 auto;
+}
+
+/* This will format the whole fieldset content*/
+
+fieldset {
+      display: block;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-before: 0em;
+      -webkit-padding-start: 0em;
+      -webkit-padding-end: 0em;
+      -webkit-padding-after: 0em;
+      border: 0px;
+      border-image-source: initial;
+      border-image-slice: initial;
+      border-image-width: initial;
+      border-image-outset: initial;
+      border-image-repeat: initial;
+      min-width: -webkit-min-content;
+      padding: 30px;
+}
+
+/* Format the input section */
+
+/* Format the input, paragraph, hover effect, focus and button */
+.ghost-input,
+p {
+      display: block;
+      font-weight: 300;
+      width: 100%;
+      font-size: 25px;
+      border: 0px;
+      outline: none;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #4b545f;
+      background: #fff;
+      font-family: Open Sans, Verdana;
+      padding: 10px 15px;
+      margin: 30px 0px;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -ms-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+}
+
+.ghost-input:focus {
+      border-bottom: 1px solid #ddd;
+}
+
+.ghost-button {
+      background-color: transparent;
+      border: 2px solid #f1f1f1;
+      padding: 10px 30px;
+      width: 100%;
+      min-width: 350px;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -ms-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+      border-radius: 2px;
+}
+
+.ghost-button:hover {
+      border: 2px solid #515151;
+}
+
+p {
+      color: #e64a19;
+}
+
+.form__group {
+      position: relative;
+      padding: 15px 0 0;
+      margin-top: 10px;
+      width: 50%;
+}
+
+.form__field {
+      font-family: inherit;
+      width: 100%;
+      border: 0;
+      border-bottom: 2px solid #9b9b9b;
+      outline: 0;
+      font-size: 1.3rem;
+      background: -webkit-linear-gradient(#11998e, #38ef7d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 7px 0;
+      transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+      color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+      font-size: 1.3rem;
+      cursor: text;
+      top: 20px;
+}
+
+.form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: #9b9b9b;
+}
+
+.form__field:focus {
+      padding-bottom: 6px;
+      font-weight: 700;
+      border-width: 3px;
+      border-image: linear-gradient(to right, #11998e, #38ef7d);
+      border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: #11998e;
+      font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+      box-shadow: none;
+}
